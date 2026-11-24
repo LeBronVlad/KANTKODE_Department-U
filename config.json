@@ -1,0 +1,13 @@
+{
+  "api_url": "http://opendata.trudvsem.ru/api/v1/vacancies/region/39",
+  "page_size": 100,
+  "max_vacancies": 200,
+  "request_timeout": 30,
+  "report_path": "reports/report.json",
+  "ollama": {
+    "enabled": true,
+    "base_url": "http://localhost:11434",
+    "model": "qwen2.5:3b",
+    "timeout": 180
+  }
+}
