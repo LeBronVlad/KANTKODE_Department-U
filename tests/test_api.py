@@ -35,12 +35,12 @@ class FakeSession:
 
 
 class ApiTests(unittest.TestCase):
-    def test_offset_advances_by_number_of_received_records(self):
+    def test_offset_advances_by_page_number(self):
         session = FakeSession()
         with patch("src.api.requests.Session", return_value=session):
             result = fetch_vacancies("https://example.invalid", 3, 2, 5)
         self.assertEqual([x["vacancy"]["id"] for x in result], ["A", "B", "C"])
-        self.assertEqual([call["offset"] for call in session.calls], [0, 2])
+        self.assertEqual([call["offset"] for call in session.calls], [0, 1])
 
 
 if __name__ == "__main__":
