@@ -1,6 +1,30 @@
+
+# Python virtual environment
 .venv/
+venv/
+
+# Python cache
 __pycache__/
-*.pyc
-reports/report.json
-*.log
+*.py[cod]
+*$py.class
+
+# Environment variables and secrets
 .env
+.env.*
+
+# Logs
+*.log
+logs/
+
+# Generated reports
+reports/report.json
+reports/report_backup.json
+reports/*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store

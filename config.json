@@ -9,5 +9,14 @@
     "base_url": "http://localhost:11434",
     "model": "qwen2.5:3b",
     "timeout": 180
+  },
+  "automation": {
+    "enabled": true,
+    "task_name": "TransparentVacancy-Daily",
+    "schedule": "DAILY",
+    "start_time": "09:00"
+  },
+  "logging": {
+    "file": "logs/app.log"
   }
 }
